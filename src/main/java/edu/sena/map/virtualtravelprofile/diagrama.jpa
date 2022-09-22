@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity-mappings v="5.4.3" rws="_165647682841336" cws="_165647682841336" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_16564768255681" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <entity compositePrimaryKeyClass="ClientePK" abs="false" class="Cliente" v="true" xre="false" m="false" rootElement="_16564768255681" id="_16564768261132">
+        <attributes>
+            <basic optional="false" attribute-type="String" v="true" name="tipoDoc" id="_16564768261327">
+                <column name="tipoDoc" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="10"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="nombre" id="_16564768261338">
+                <column name="nombre" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="20"/>
+            </basic>
+            <basic optional="true" attribute-type="String" v="true" name="secNombre" id="_16564768261339">
+                <column name="secNombre" unique="false" nullable="true" insertable="true" updatable="true" table="cliente" length="10"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="genero" id="_165647682613310">
+                <column name="genero" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="1"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="apellido" id="_165647682613311">
+                <column name="apellido" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="20"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="direccion" id="_165647682613312">
+                <column name="direccion" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="40"/>
+            </basic>
+            <basic optional="false" attribute-type="int" v="true" name="telFijo" id="_165647682613413">
+                <column name="telFijo" unique="false" nullable="false" insertable="true" updatable="true" table="cliente"/>
+            </basic>
+            <basic optional="false" attribute-type="int" v="true" name="telCelular" id="_165647682613414">
+                <column name="telCelular" unique="false" nullable="false" insertable="true" updatable="true" table="cliente"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="email" id="_165647682613415">
+                <column name="email" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="40"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="password" id="_165647682613416">
+                <column name="password" unique="false" nullable="false" insertable="true" updatable="true" table="cliente" length="40"/>
+            </basic>
+            <one-to-many own="false" collection-type="java.util.List" connected-entity-id="_16564768261155" connected-attribute-id="_165647682614034" v="true" name="citaCollection" id="_165647682613617"/>
+            <id attribute-type="Integer" v="true" name="idcliente" id="_16564768261296">
+                <column name="idcliente" unique="false" nullable="false" insertable="true" updatable="true" table="cliente"/>
+                <generated-value strategy="DEFAULT"/>
+            </id>
+        </attributes>
+        <table name="cliente">
+            <unique-constraint>
+                <column-name>idcliente</column-name>
+            </unique-constraint>
+        </table>
+    </entity>
+    <entity compositePrimaryKeyClass="TipocitaPK" abs="false" class="Tipocita" v="true" xre="false" m="false" rootElement="_16564768255681" id="_16564768261143">
+        <attributes>
+            <basic optional="true" attribute-type="String" v="true" name="motivo" id="_165647682613719">
+                <column name="motivo" unique="false" nullable="true" insertable="true" updatable="true" table="tipocita" length="100"/>
+            </basic>
+            <many-to-one primaryKey="false" connected-entity-id="_16564768261155" connected-attribute-id="_165647682614033" v="true" name="idCita" id="_165647682613920">
+                <join-column name="IDCITA" rc="IDCITA" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </many-to-one>
+            <id attribute-type="String" v="true" name="iptipoCita" id="_165647682613718">
+                <column name="iptipoCita" unique="false" nullable="false" insertable="true" updatable="true" table="tipocita" length="10"/>
+            </id>
+        </attributes>
+        <table name="tipocita"/>
+    </entity>
+    <entity compositePrimaryKeyClass="AsesorPK" abs="false" class="Asesor" v="true" xre="false" m="false" rootElement="_16564768255681" id="_16564768261154">
+        <attributes>
+            <basic optional="true" attribute-type="String" v="true" name="nombre" id="_165647682614022">
+                <column name="nombre" unique="false" nullable="true" insertable="true" updatable="true" table="asesor" length="10"/>
+            </basic>
+            <basic optional="true" attribute-type="String" v="true" name="apellido" id="_165647682614023">
+                <column name="apellido" unique="false" nullable="true" insertable="true" updatable="true" table="asesor" length="10"/>
+            </basic>
+            <basic optional="true" attribute-type="String" v="true" name="email" id="_165647682614024">
+                <column name="email" unique="false" nullable="true" insertable="true" updatable="true" table="asesor" length="40"/>
+            </basic>
+            <basic optional="true" attribute-type="Integer" v="true" name="telefono" id="_165647682614025">
+                <column name="telefono" unique="false" nullable="true" insertable="true" updatable="true" table="asesor"/>
+            </basic>
+            <basic optional="true" attribute-type="String" v="true" name="estado" id="_165647682614026">
+                <column name="estado" unique="false" nullable="true" insertable="true" updatable="true" table="asesor" length="10"/>
+            </basic>
+            <one-to-many own="false" collection-type="java.util.List" connected-entity-id="_16564768261155" connected-attribute-id="_165647682614135" v="true" name="citaCollection" id="_165647682614027"/>
+            <id attribute-type="String" v="true" name="idAsesor" id="_165647682614021">
+                <column name="idAsesor" unique="false" nullable="false" insertable="true" updatable="true" table="asesor" length="10"/>
+            </id>
+        </attributes>
+        <table name="asesor"/>
+    </entity>
+    <entity compositePrimaryKeyClass="CitaPK" abs="false" class="Cita" v="true" xre="false" m="false" rootElement="_16564768255681" id="_16564768261155">
+        <attributes>
+            <basic optional="false" attribute-type="java.util.Date" v="true" name="fechaCita" id="_165647682614029">
+                <temporal>TIMESTAMP</temporal>
+                <column name="fechaCita" unique="false" nullable="false" insertable="true" updatable="true" table="cita"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" xvt="" name="hora" id="_165647682614030">
+                <xwm/>
+                <xm/>
+                <column name="hora" unique="false" nullable="false" insertable="true" updatable="true" table="cita" length="10"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="estadoCita" id="_165647682614031">
+                <column name="estadoCita" unique="false" nullable="false" insertable="true" updatable="true" table="cita" length="10"/>
+            </basic>
+            <basic optional="false" attribute-type="String" v="true" name="observaciones" id="_165647682614032">
+                <column name="observaciones" unique="false" nullable="false" insertable="true" updatable="true" table="cita" length="200"/>
+            </basic>
+            <many-to-one optional="false" primaryKey="false" connected-entity-id="_16564768261132" connected-attribute-id="_165647682613617" v="true" name="idClienteCita" id="_165647682614034">
+                <join-column name="IDCLIENTECITA" rc="IDCLIENTE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </many-to-one>
+            <many-to-one primaryKey="false" connected-entity-id="_16564768261154" connected-attribute-id="_165647682614027" v="true" name="idAsesorCita" id="_165647682614135">
+                <join-column name="IDASESORCITA" rc="IDASESOR" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </many-to-one>
+            <one-to-many own="false" collection-type="java.util.List" connected-entity-id="_16564768261143" connected-attribute-id="_165647682613920" v="true" name="tipocitaCollection" id="_165647682614033"/>
+            <id attribute-type="String" v="true" name="idCita" id="_165647682614028">
+                <column name="idCita" unique="false" nullable="false" insertable="true" updatable="true" table="cita" length="10"/>
+            </id>
+        </attributes>
+        <table name="cita"/>
+    </entity>
+    <wsl>
+        <ws n="Main" id="_165647682841336">
+            <i ref="_16564768261155" x="308" y="330"/>
+            <i ref="_16564768261132" x="806" y="264"/>
+            <i ref="_16564768261143" x="220" y="453"/>
+            <i ref="_16564768261154" x="32" y="32"/>
+        </ws>
+    </wsl>
+</entity-mappings>

@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:h5="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Virtual Travel Profile</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content=""/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- titulo pagina web  -->
+        <title> Visas - Exito</title>
+
+        <!-- logo de pagina web -->
+        <link rel="icon" href="./img/img-logos/logo.jpeg"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"/>
+        <!-- hoja de estilo -->
+        <link rel="stylesheet" href="style.css"/>
+
+
+    </h:head>
+    <h:body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- /Preloader -->
+
+        <!-- Top Search Form Area -->
+        <div class="top-search-area">
+            <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- Close -->
+                            <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                            <!-- Form -->
+                            <form action="index.html" method="post">
+                                <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter..."/>
+                                <button type="submit">BUSCAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--inicio del area de encabezado -->
+        <header class="header-area">
+            <!-- Main Header Start -->
+            <div class="main-header-area">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                            <!-- NOMBRE VISAS-EXITO EN IMAGEN -->
+                            <a class="nav-brand" href="./index.html"><img src="" alt=""/></a>
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="classy-menu">
+                                <!-- Menu Close Button -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul id="nav">
+                                        <li class="active"><a href="/index.xhtml">Inicio</a></li>
+                                        <li ><a href="./history.xhtml"> Historia </a></li>
+                                        <li ><a href="./gallery.xhtml">Album</a></li>
+                                        <li ><a href="./contact.xhtml">Contáctenos</a></li>
+                                        <li ><a href="./login.xhtml" target="_blank">Login</a></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- final area del encabezado -->
+
+
+
+        <!-- Inicio del Area de Bienvenidas - Background -->
+        <section class="welcome-area">
+            <div class="welcome-slides owl-carousel">
+
+                <!-- Primer Background visa Turismo -->
+                <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/Background-img/Visa-cotizaciones.jpeg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-lg-8 col-xl-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="bounceInDown" data-delay="900ms">Contactenos</h2>
+                                    <p data-animation="bounceInDown" data-delay="500ms">Conoce como realizar el tramite</p>
+                                    <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                        <a href="" class="btn alime-btn mb-3 mb-sm-0 mr-4">Cotiza Gratis</a>
+                                        <a class="hero-mail-contact" href="#"><!--ingrese texto--> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo Background visa Turismo -->
+                <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/Background-img/visa_turismo.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-lg-8 col-xl-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="bounceInDown" data-delay="900ms">Visa de Turismo </h2>
+                                    <p data-animation="bounceInDown" data-delay="500ms"> Solicita tu visa con Nosotros</p>
+                                    <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                        <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Cotiza Gratis</a>
+                                        <a class="hero-mail-contact" href="#"><!--ingrese texto--> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercer Background visa Trabajo  -->
+                <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/Background-img/visa_trabajo.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-lg-8 col-xl-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="bounceInDown" data-delay="900ms"> Visa de Trabajo   </h2>
+                                    <p data-animation="bounceInDown" data-delay="500ms"> Solicita tu visa con Nosotros</p>
+                                    <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                        <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Cotiza Gratis</a>
+                                        <a class="hero-mail-contact" href="#"><!--ingrese texto--> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuarto Background visa Trabajo  -->
+                <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/Background-img/blog_visa.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-lg-8 col-xl-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="bounceInDown" data-delay="900ms"> Visa de Estudio    </h2>
+                                    <p data-animation="bounceInDown" data-delay="500ms"> Solicita tu visa con Nosotros</p>
+                                    <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                        <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Cotiza Gratis</a>
+                                        <a class="hero-mail-contact" href="#"><!--ingrese texto--> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final del Area de Bienvenidas - Background -->
+
+
+
+        <!-- Area tipo de visas -->
+        <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                            <h2> Contamos con asesoramiento y tramite de visas: </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Area Visa de Turismo -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="chosse-us-icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="text-center">Visa de Turismo</h4>
+                            <p>Esta Visa es para cualquier persona que quiera visitar un país con el propósito de conocerlo, 
+                                visitar familiares, amigos, generalmente tiene una duración de uno a tres meses. 
+                                Las personas que optan por esta Visa no tienen permitido hacer negocios en ese país los cuales les generan ingresos de ningún tipo, 
+                                lo único que tienen permitido es gastar dinero...</p>
+                        </div>
+                    </div>
+                    <!-- Area Visa de Trabajo -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="chosse-us-icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h4>Visa de Trabajo</h4>
+                            <p>Las visas de trabajo son visas de no inmigrantes, lo que significa que solamente son válidas para un determinado período de tiempo.
+                                Sin embargo, la mayoría de las visas de trabajo se pueden renovar fácilmente. 
+                                En estos casos es necesario que una empresa o institucion del pais patrocine al empleado extranjero..</p>
+                        </div>
+                    </div>
+                    <!-- Area Visa de Trabajo -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="chosse-us-icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h4>Visa de Estudio</h4>
+                            <p>Esta Visa es para cualquier persona que quiera visitar un país con el propósito de conocerlo, 
+                                visitar familiares, amigos, generalmente tiene una duración de uno a tres meses. 
+                                Las personas que optan por esta Visa no tienen permitido hacer negocios en ese país los cuales les generan ingresos de ningún tipo, 
+                                lo único que tienen permitido es gastar dinero...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose  us Area End -->
+
+        <!-- Inicio de la zona de asesores -->
+        <section class="our-team-area section-padding-80-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                            <h2>Contamos con Asesores Expertos</h2>
+                            <h4>En acesoramiento y tramite de Visas.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- ZONA DE DIRECTIVOS DEL CLUB  -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="member-thumb">
+                                <img src="./img/asesores-img/asesor1.jpg" alt=""/>
+                            </div>
+                            <h6>Cristian Gomez</h6>
+                            <h4>ASESOR</h4>
+                            <span>Visas Exito </span>
+                            <div class="member-social-info">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ZONA DE DIRECTIVOS DEL CLUB  -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="500ms">
+                            <div class="member-thumb">
+                                <img src="./img/asesores-img/asessor2.jpg" alt=""/>
+                            </div>
+                            <h6>Carolina Clemete</h6>
+                            <h4>ASESORA</h4>
+                            <span>Visas Exito</span>
+                            <div class="member-social-info">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ZONA DE DIRECTIVOS DEL CLUB  -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="member-thumb">
+                                <img src="./img/asesores-img/asesor1.jpg" alt=""/>
+                            </div>
+                            <h6>Sebastián Rincon</h6>
+                            <h4>Asesor</h4>
+                            <span>Visas Exito</span>
+                            <div class="member-social-info">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ZONA DE DIRECTIVOS DEL CLUB  -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="700ms">
+                            <div class="member-thumb">
+                                <img src="./img/asesores-img/asessor2.jpg" alt=""/>
+                            </div>
+                            <h6>Angie Romero</h6>
+                            <h4>Asesora</h4>
+                            <span>Visas Exito </span>
+                            <div class="member-social-info">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la zona de asesores -->
+        <section >
+            <div class="flex-container">
+                <label> <h2>Dejanos tus datos para comunicarnos</h2> </label>
+                <h:form>
+                    <div class="row" style="margin-top: 50px">
+                        <h:inputText 
+                            h5:placeholder="Correo Electronico"
+                            required="false"
+                            requiredMessage ="Ingrese Un correo Valido"
+                            id="correo_id"
+                            class="form-control"/>
+                        <label for="correo_id">Correo Electronico</label>
+                        <br/>
+                        <h:message for="correo_id" style="color: red"></h:message>
+
+                    </div>
+                    <div class="row" style="margin-top: 10px">
+                        <h:inputText 
+                            h5:placeholder="Nombre"
+                            required="false"
+                            requiredMessage ="Ingrese Un Nombre"
+                            id="nombre_id"
+                            class="form-control"/>
+                        <label for="nombre_id"> Nombre </label>
+                        <br/>
+                        <h:message for="nombre_id" style="color: red"></h:message>
+                    </div>
+                    
+                    <div class="row" style="margin-top: 10px">
+                        <h:inputText 
+                            h5:placeholder="Apellido"
+                            required="false"
+                            requiredMessage ="Ingrese sus apellidos"
+                            id="apellido_id"
+                            class="form-control"/>
+                        <label for="apellido_id"> Apellido </label>
+                        <br/>
+                        <h:message for="apellido_id" style="color: red"></h:message>
+                    </div>
+                                 
+                    
+                    <div class="row" style="margin-top: 10px">
+                        <h:inputText 
+                            h5:placeholder="Direccion"
+                            required="false"
+                            requiredMessage ="Ingrese Direccion"
+                            id="Dir_id"
+                            class="form-control"/>
+                        <label for="Dir_id"> Direccion </label>
+                        <br/>
+                        <h:message for="Dir_id" style="color: red"></h:message>
+                    </div>
+                    
+                    
+                    <div class="row" style="margin-top: 10px">
+                        <h:inputText 
+                            h5:placeholder="Telefono"
+                            required="false"
+                            requiredMessage ="Ingrese telefono"
+                            id="tel_id"
+                            class="form-control"/>
+                        <label for="tel_id"> Telefono </label>
+                        <br/>
+                        <h:message for="tel_id" style="color: red"></h:message>
+                    </div>
+                    
+                    <h:commandButton type="submit" class="btn btn-primary">Submit</h:commandButton>
+                </h:form>
+            </div>
+        </section>            
+        <!-- Follow Area Start -->
+        <div class="follow-area clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center">
+                            <h2>Siguenos en Instagram</h2>
+                            <li ><a href="@visasexito"> @Visasexito</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zona de imagenes publicitarias de Instragram -->
+
+            <div class="instragram-feed-area owl-carousel">
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/img-instagram/Contactenos.jfif" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@Visasexito</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/bg-img/12.jpg" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@Visasexito</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/bg-img/13.jpg" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@Visasexito</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/bg-img/14.jpg" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@Visasexito</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/bg-img/15.jpg" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@Visasexito</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Single Instagram Item -->
+                <div class="single-instagram-item">
+                    <img src="img/bg-img/16.jpg" alt=""/>
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>@crewmotorsfamily</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Follow Area End -->
+
+
+
+        <!-- Footer Area Start -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-content d-flex align-items-center justify-content-between">
+                        </div>
+                        <!-- enlaces redes Sociales Info -->
+                        <div class="social-info">
+                            <!--    <a href="https://es-la.facebook.com/CrewMotorsFamily/"target="_blank" i class="ti-facebook" aria-hidden="true"></a>
+                                <a href="https://www.google.com/"target="_blank" i class="ti-twitter-alt" aria-hidden="true"></a>
+                                <a href="https://www.instagram.com/crewmotorsfamily/"target="_blank" i class="fa fa-instagram" aria-hidden="true"></a>
+                                <a href="https://www.youtube.com/channel/UCtGJNz1XRAmFwqaKR95xGRg"target="_blank" i class="fa fa-youtube" aria-hidden="true"></a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- Footer Area End -->
+
+
+        <!-- **** All JS Files ***** -->
+        <!-- jQuery 2.2.4 -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- All Plugins -->
+        <script src="js/alime.bundle.js"></script>
+        <!-- Active -->
+        <script src="js/default-assets/active.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    </h:body>
+</html>
+
